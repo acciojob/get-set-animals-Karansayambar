@@ -1,21 +1,24 @@
 //complete this code
 class Animal {
 	constructor(spacies){
-		this.spacies = spacies;
+		this._spacies = spacies;
 	}
-	function makeSound(
+	get spacies(){
+		return this._spacies;
+	}
+	makeSound(){
 		console.log(`The ${this.spacies} makes a sound`);
-	)
+	}
 }
 
 class Dog extends Animal {
-	function bark(){
+	bark(){
 		console.log("woof");
 	}
 }
 
 class Cat extends Animal {
-	function furr(){
+	furr(){
 		console.log("purr");
 	}
 }
