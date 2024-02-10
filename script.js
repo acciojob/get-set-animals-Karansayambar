@@ -1,13 +1,13 @@
 //complete this code
 class Animal {
 	constructor(spacies){
-		this.spacies = spacies;
+		this._spacies = spacies;
 	}
 	get spacies(){
-		return this.spacies;
+		return this._spacies;
 	}
 	makeSound(){
-		console.log(`The ${this.spacies} makes a sound`);
+		console.log(`The ${this._spacies} makes a sound`);
 	}
 }
 
